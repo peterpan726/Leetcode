@@ -1,0 +1,15 @@
+def plusOne(digits):
+        tmp = []
+        count = 0
+        for index, i in enumerate(digits):
+            if i == 0 and index == 0:
+                pass
+            else:
+                tmp.append(i)
+            count += 1
+        
+        print(count)
+        tmp[count] += 1
+        return tmp
+a = [1,2,3]
+plusOne(a)
