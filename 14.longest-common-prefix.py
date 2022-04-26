@@ -7,13 +7,10 @@
 # @lc code=start
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        
-        if not strs: return " " # if not 可以用來檢查資料及是否為空
+        if not strs: return " "
+        if len(strs) == 1: return strs[0]
 
-        for i,c in enumerate(zip(*strs)): # *類似zip的用法
-            if len(set(c)) > 1 :
-                return strs[0][:i]
-        return min(strs)
+        ans = ""
         
+      
 # @lc code=end
-

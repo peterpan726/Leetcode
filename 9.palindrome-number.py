@@ -5,13 +5,19 @@
 #
 
 # @lc code=start
-from torch import inverse
+
 
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        x = str(x)
-        if x 
+        s = str(x)
+        r = reversed(s)
+        for i, j  in zip(s, r):
+            if i == j:
+                pass
+            else:
+                return False
+        return True
 
         
 # @lc code=end
